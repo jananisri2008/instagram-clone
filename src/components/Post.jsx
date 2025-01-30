@@ -1,9 +1,5 @@
 
 import React from 'react';
-import user1 from '../assets/images/user1.jpeg';
-import post1 from '../assets/images/post1.png';
-import post2 from '../assets/images/post2.png';
-import post3 from '../assets/images/post3.png';
 import { BsThreeDots } from "react-icons/bs";
 import { FaRegComment } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa6";
@@ -16,21 +12,21 @@ const Post = () => {
       id: 1,
       username: "user1",
       useract:"username@1",
-      img: post1,
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz9614ROApCdbYcwrsiZXkg1Z8hrIxKlAnSQ&s",
       caption: "100 likes",
     },
     {
       id: 2,
       username: "user2",
       useract:"username@2",
-      img: post2,
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt0294c4W_bA1IAmha0GTpzQ397iK3uBz2pqCSkLjVWkJYx6wG2Eicywr7929OkPRLk3E&usqp=CAU",
       caption: "200 likes",
     },
     {
       id: 3,
       username: "user3",
       useract:"username@3",
-      img: post3,
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg6u7Y4E6RPMNzqk0_25Qs4L-JwNcSu3Qj1Mmo7fMxffE84adCMeYrIMebmzlQ2t1EdbU&usqp=CAU",
       caption: "300 likes",
     },
   ];
@@ -46,12 +42,11 @@ const Post = () => {
             {/* User Info */}
             <div className="flex items-center space-x-3 mb-3 w-full">
               <img
-                src={user1}
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRboCvHOqHfUS2URUKHXB4LQOxZeDCZIpEdzA&s"
                 alt="User"
-                className="w-14 h-14 rounded-full object-cover border-2 border-pink-500"
+                className="w-14 h-14 rounded-full object-cover"
               />
-              {/* <span className="font-semibold text-lg">{post.username}</span>
-              <span className="font-normal text-base">{post.useract}</span> */}
+              
               <div className="flex items-center justify-between w-full">
           <div>
             <p className="font-semibold text-lg">{post.username}</p> 
@@ -64,8 +59,7 @@ const Post = () => {
               </div>
             </div>
 
-            {/* Post Image */}
-            {/* <div className="mt-4 w-full mx-auto flex justify-center"> */}
+           
             <div className='flex items-center space-x-3 mb-3 w-full justify-center'>
               <img
                 src={post.img}
@@ -74,7 +68,7 @@ const Post = () => {
               />
             </div>
 
-            {/* Post Action Icons */}
+           
             <div className="flex items-center justify-between mt-3 w-full">
               <div className="flex items-center space-x-6">
                 <FaRegHeart  size={24} className="cursor-pointer hover:text-red-700" />

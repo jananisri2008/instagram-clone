@@ -1,18 +1,15 @@
 
 import React from 'react';
-import user1 from '../assets/images/user1.jpeg';
-import user2 from '../assets/images/user2.jpeg';
-import user3 from '../assets/images/user3.jpeg';
 import { FaRegCopyright } from "react-icons/fa";
 
 const RightSidebar = () => {
   const suggestions = [
-    { name: 'user1', img: user1 },
-    { name: 'user2', img: user2 },
-    { name: 'user3', img: user3 },
-    { name: 'user4', img: user1 },
-    { name: 'user2', img: user2 },
-    { name: 'user3', img: user3 },
+    { name: 'user1', img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8o3GG2EjlUE1_CuMAXlwnF9UVmHf-MPLdpA&s" },
+    { name: 'user2', img: "https://cdn.pixabay.com/photo/2022/11/28/20/52/bird-7623166_640.jpg" },
+    { name: 'user3', img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDCzTZyjcooJ0KmXQ8G-Ed9OSost7u0YLyyw&s" },
+    { name: 'user4', img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv00WM0jgig7GUyZXqHCS-OponF9y5FTGXpg&s" },
+    { name: 'user2', img: "https://animals.net/wp-content/uploads/2019/08/Finch-6-650x425.jpg" },
+    { name: 'user3', img: "https://i.pinimg.com/736x/1f/4f/21/1f4f21a95d6b666280e65059ae6864d8.jpg" },
   ];
 
   return (
@@ -20,7 +17,7 @@ const RightSidebar = () => {
       {/* User Profile Section */}
       <div className="flex items-center space-x-3 mb-6">
         <img
-          src={user1}
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRboCvHOqHfUS2URUKHXB4LQOxZeDCZIpEdzA&s"
           alt="User"
           className="w-12 h-12 rounded-full"
         />

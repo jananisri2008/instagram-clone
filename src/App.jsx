@@ -9,7 +9,7 @@ import Search from './components/Search';
 import Reels from './components/Reels';
 import Messages from './components/Messages';
 import Notification from './components/Notification';
-
+import Create from './components/Create';
 const App = () => {
   return (
     <Router>
@@ -32,6 +32,8 @@ const App = () => {
             <Route path="/reels" element={<Reels />} />
             <Route path="/messages" element={<Messages />} />
             <Route path="/notification" element={<Notification />} />
+            <Route path="/create" element={<Create/>} />
+            
           </Routes>
         </div>
         <RightSidebar />
